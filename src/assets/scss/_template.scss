@@ -1,0 +1,128 @@
+// fonts
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&subset=cyrillic,latin-ext');
+
+// media queries
+
+@media only screen and (min-width: 640px) {
+	body {
+		background: #eee !important;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.button {
+		font-size: 5.4vmin !important;
+		border-radius: 4vmin !important;
+	}
+
+	input {
+		padding: 1.6em 1em !important;
+		border-radius: $global-radius !important;
+	}
+
+	.title,
+	.subtitle {
+		text-align: center;
+	}
+
+	.copyright {
+		text-align: center !important;
+	}
+
+}
+
+
+// bugfixes
+
+.fix {
+	border: 1px solid red !important;
+}
+
+// grid addons
+
+
+.spacer-2 {
+	margin: 0 auto;
+	height: 2px;
+}
+
+.spacer-4 {
+	margin: 0 auto;
+	height: 4px;
+}
+
+.spacer-8 {
+	margin: 0 auto;
+	height: 8px;
+}
+
+.spacer-16 {
+	margin: 0 auto;
+	height: 16px;
+}
+
+.spacer-32 {
+	margin: 0 auto;
+	height: 32px;
+}
+
+.spacer-64 {
+	margin: 0 auto;
+	height: 64px;
+}
+
+.spacer-128 {
+	margin: 0 auto;
+	height: 128px;
+}
+
+.pusher {
+	height: 100% !important;
+}
+
+// layout
+
+// container
+
+.container {
+	background: #fff;
+}
+
+// subheader formula
+
+.math-w,
+.math-b,
+.math-m {
+	font-weight: bold;
+	/*font-weight: 700;*/
+}
+
+.math-w {
+	color: #e42;
+}
+
+.math-b {
+	color: #2bb;
+}
+
+.math-m {
+	color: #0ae;
+}
+
+// buttons
+
+.button {
+	border-radius: 8px;
+}
+
+// copyright
+
+.copyright {
+	text-align: right;
+	font-style: italic;
+}
+
+
+
+
