@@ -1,0 +1,120 @@
+// MEDIA
+
+@include breakpoint(large) {
+
+	p {
+		color: $black;
+	}
+
+	input {
+		background: #f4f4f4 !important;
+	}
+
+	.grid-container.content {
+		background-color: $white;
+	}
+
+	
+}
+
+@include breakpoint(medium only) {
+
+
+	
+}
+
+// TESTS
+
+.cell {
+	// outline: 1px solid red;
+}
+
+.grid-x {
+	// outline: 1px solid black;
+}
+
+.grid-container {
+	// outline: 1px solid white;
+}
+
+// OVERRIDES
+
+.button {
+	font-weight: bold;
+}
+
+// ELEMENTS
+
+@for $i from 1 through 8 {
+    $spacer-height: 8 * $i;
+    .spacer-#{$spacer-height} { 
+        height: $spacer-height#{px};
+        }
+}
+
+.line {
+	display: block;
+	height: 2px;
+	background: $primary-color;
+}
+
+input {
+	text-align: center;
+	border-bottom: 2px solid $primary-color !important;
+	height: 2em;
+}
+
+.loader {
+	max-width: 177px;
+	max-height: 177px;
+}
+
+.loader img {
+	float: center;
+	display: inline-block;
+}
+
+// SWITCH
+
+// $switch-background: $medium-gray;
+// $switch-background-active: $primary-color;
+// $switch-height: 2.6rem;
+// $switch-radius: 24px;
+// $switch-margin: $global-margin;
+// $switch-paddle-background: $white;
+// $switch-paddle-offset: 0.5rem;
+// $switch-paddle-radius: 24px;
+// $switch-paddle-transition: all 0.25s ease-out;
+
+
+
+// HEADER
+
+.logo {
+	max-width: 256px;
+	max-height: 128px;
+}
+
+.logo img {
+	float: center;
+	display: inline-block;
+}
+
+// BODY
+
+// FOOTER
+
+.logo-bullet {
+	color: $primary-color;
+}
+
+.footer p {
+	color: $white;
+	font-size: 0.9em;
+	line-height: 1.2em;
+	letter-spacing: 1px;
+}
+
+.footer a {
+	border-bottom: 1px solid rgba(255,255,255,0.48);
+}
