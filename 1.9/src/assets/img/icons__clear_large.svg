@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+
+    <style>
+      .clear-output-svg {
+        fill: #08d;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="clear-output-id" data-name="clear-output-data" class="clear-output-svg" d="M8.98,24.022l-1-1L15,16,7.978,8.98l1-1L16,15l7.02-7.02,1,1L17,16l7.02,7.02-1,1L16,17Z"/>
+</svg>

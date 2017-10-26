@@ -1,6 +1,38 @@
 // MEDIA
 
+@include breakpoint(small) {
+
+	a.hollow {
+		color: $white !important;
+		border-color: $white !important;
+	}
+
+	.switch-paddle {
+		background: transparent !important;
+	}
+
+	.clear-output-svg {
+	  fill: #fff;
+	}
+	
+}
+
+@include breakpoint(medium only) {
+
+
+	
+}
+
 @include breakpoint(large) {
+
+	.clear-output-svg {
+	  fill: #08d !important;
+	}
+
+	a.hollow {
+		color: $black !important;
+		border-color: $primary-color !important;
+	}
 
 	p {
 		color: $black;
@@ -14,12 +46,12 @@
 		background-color: $white;
 	}
 
-	
-}
-
-@include breakpoint(medium only) {
-
-
+	.switch-paddle {
+		background: #08d !important;
+		-webkit-box-shadow: none !important;
+		-moz-box-shadow: none !important;
+		box-shadow: none !important;
+	}
 	
 }
 
@@ -39,7 +71,42 @@
 
 // OVERRIDES
 
-.button {
+body {
+	background-image: url('../img/assets__pattern.png') !important;
+	background-repeat: repeat;
+}
+
+th, td {
+	text-align: center !important;
+}
+
+td {
+	color: $black;
+}
+
+thead{
+	border: none !important;
+}
+
+a.hollow span {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.hollow-label {
+	position: relative;
+	top: -1px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+a.button {
 	font-weight: bold;
 }
 
@@ -74,6 +141,11 @@ input {
 	display: inline-block;
 }
 
+.theader {
+	background: $primary-color;
+	height: 48px;
+}
+
 // SWITCH
 
 // $switch-background: $medium-gray;
@@ -86,7 +158,19 @@ input {
 // $switch-paddle-radius: 24px;
 // $switch-paddle-transition: all 0.25s ease-out;
 
+.switch-paddle {
+	-webkit-box-shadow: inset 0px 0px 0px 2px #fff;
+	-moz-box-shadow: inset 0px 0px 0px 2px #fff;
+	box-shadow: inset 0px 0px 0px 2px #fff;
+	width: 100% !important;
+}
 
+.paddle-dechex {
+	padding-left: 16px;
+	padding-right: 16px;
+	position: relative;
+	top: 5px;
+}
 
 // HEADER
 

@@ -294,7 +294,7 @@ $button-background-hover: scale-color($button-background, $lightness: -10%);
 $button-color: $white;
 $button-color-alt: $black;
 $button-radius: $global-radius + 6;
-$button-hollow-border-width: 1px;
+$button-hollow-border-width: 2px;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
@@ -304,7 +304,7 @@ $button-sizes: (
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
 $button-background-hover-lightness: -20%;
-$button-hollow-hover-lightness: -50%;
+$button-hollow-hover-lightness: -15%;
 $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
 
 // 12. Button Group
@@ -767,9 +767,11 @@ $slider-radius: $global-radius;
 // 49. Switch
 // ----------
 
-$switch-background: $medium-gray;
+// $switch-background: $medium-gray;
+$switch-background: #f4f4f4;
 $switch-background-active: $primary-color;
-$switch-height: 2.6rem;
+// $switch-background-active: none;
+$switch-height: 2.8rem;
 // $switch-height: 48px;
 $switch-height-tiny: 1.5rem;
 $switch-height-small: 1.75rem;
@@ -779,24 +781,28 @@ $switch-radius: 48px;
 // $switch-margin: $global-margin;
 $switch-margin: 0;
 $switch-paddle-background: $white;
-$switch-paddle-offset: 0.5rem;
+$switch-paddle-offset: 0.72rem;
 $switch-paddle-radius: 32px;
 $switch-paddle-transition: all 0.25s ease-out;
 
 // 50. Table
 // ---------
 
+// $table-background: $white;
 $table-background: $white;
 $table-color-scale: 5%;
-$table-border: 1px solid smart-scale($table-background, $table-color-scale);
-$table-padding: rem-calc(8 10 10);
+// $table-border: 1px solid smart-scale($table-background, $table-color-scale);
+$table-border: 1px solid #ebf9ff;
+$table-padding: rem-calc(16);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
 $table-is-striped: true;
-$table-striped-background: smart-scale($table-background, $table-color-scale);
+// $table-striped-background: smart-scale($table-background, $table-color-scale);
+$table-striped-background: #ebf9ff;
 $table-stripe: even;
-$table-head-background: smart-scale($table-background, $table-color-scale / 2);
+// $table-head-background: smart-scale($table-background, $table-color-scale / 2);
+$table-head-background: $primary-color;
 $table-head-row-hover: darken($table-head-background, $table-hover-scale);
 $table-foot-background: smart-scale($table-background, $table-color-scale);
 $table-foot-row-hover: darken($table-foot-background, $table-hover-scale);
