@@ -2,7 +2,8 @@
 
 @include breakpoint(small) {
 
-	a.hollow {
+	a.hollow,
+	button.hollow {
 		color: $white !important;
 		border-color: $white !important;
 	}
@@ -29,7 +30,8 @@
 	  fill: #08d !important;
 	}
 
-	a.hollow {
+	a.hollow,
+	button.hollow {
 		color: $black !important;
 		border-color: $primary-color !important;
 	}
@@ -88,7 +90,8 @@ thead{
 	border: none !important;
 }
 
-a.hollow span {
+a.hollow span,
+button.hollow span {
 	vertical-align: middle;
 	display: inline-block;
 }
@@ -106,7 +109,8 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0; 
 }
 
-a.button {
+a.button,
+button.button {
 	font-weight: bold;
 }
 
