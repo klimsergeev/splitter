@@ -23,6 +23,8 @@ $(document).foundation();
 		var Mf; // minimum size of a margin
 		var Mt; // maximum size of a margin
 
+		var solutions = 0;
+
 	// END DECLARATIONS
 
 	$(document).ready(function() {
@@ -120,11 +122,15 @@ $(document).foundation();
 
 					if (X % 1 == 0) {
 
+						solutions++;
+
 						$('.tbody').append('<tr class="trow"><td class="td_block">' + X + '</td><td class="td_margin">' + i + '</td></tr>');
 
 					};
 
 				};
+
+				$('.output_title').html('You have ' + solutions + ' solution(s):');
 
 
 			};
