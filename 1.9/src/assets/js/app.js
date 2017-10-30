@@ -155,7 +155,7 @@ $(document).foundation();
 
 				$('.chk_jquery').append('jQuery is fine ');
 
-				document.getElementById('chk_jquery_id').innerHTML='JavaScript: JavaScript is fine';
+				// document.getElementById('chk_jquery_id').innerHTML='JavaScript: JavaScript is fine';
 
 			};
 
@@ -166,10 +166,15 @@ $(document).foundation();
 
 		// Core
 
-			chk_localStorage();
-			chk_jquery();
+			// Test
 
-			if(window.location.href == "http://localhost:8000/input/") {
+				// chk_localStorage();
+				// chk_jquery();
+
+			// END Test
+
+			// if(window.location.href == "http://localhost:8000/input/") {
+			if(window.location.pathname == "/splitter/1.9/input/") {
 
 				// input functions
 
@@ -189,7 +194,8 @@ $(document).foundation();
 
 				});
 
-			} else if (window.location.href == "http://localhost:8000/output/"){
+			// } else if (window.location.href == "http://localhost:8000/output/"){
+			} else if (window.location.pathname == "/splitter/1.9/output/"){
 
 				parse_variables();
 
@@ -198,6 +204,18 @@ $(document).foundation();
 				$('.restart').click(function() {
 
 					clear_inputs();
+
+					window.location.href = "../input/";
+
+				});
+
+				$('.logo').click(function() {
+
+					window.location.href = "../input/";
+
+				});
+
+				$('.back_button').click(function() {
 
 					window.location.href = "../input/";
 
