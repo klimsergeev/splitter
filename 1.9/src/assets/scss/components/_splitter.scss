@@ -33,7 +33,7 @@
 	a.hollow,
 	button.hollow {
 		color: $black !important;
-		border-color: $primary-color !important;
+		border-color: $dark-blue !important;
 	}
 
 	p {
@@ -74,8 +74,6 @@
 // OVERRIDES
 
 body {
-	background-image: url('../img/assets__pattern.png') !important;
-	background-repeat: repeat;
 }
 
 th, td {
@@ -83,7 +81,7 @@ th, td {
 }
 
 td {
-	color: $black;
+	color: $black !important;
 }
 
 thead{
@@ -126,7 +124,7 @@ button.button {
 .line {
 	display: block;
 	height: 2px;
-	background: $primary-color;
+	background: $white-transparent;
 }
 
 input {
@@ -146,7 +144,7 @@ input {
 }
 
 .theader {
-	background: $primary-color;
+	background: $dark-blue;
 	height: 48px;
 }
 
@@ -193,7 +191,7 @@ input {
 // FOOTER
 
 .logo-bullet {
-	color: $primary-color;
+	color: $dark-blue;
 }
 
 .footer p {

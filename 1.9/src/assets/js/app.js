@@ -12,9 +12,16 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 
+
+
 // Splitter v.1.9
 
-	// DECLARATIONS
+	// TEST FUNCTIONS
+
+
+	// END TEST FUNCTIONS
+
+	// GLOBAL DECLARATIONS
 
 		var X; // unknown width of a block
 
@@ -25,9 +32,10 @@ $(document).foundation();
 
 		var solutions = 0;
 
-	// END DECLARATIONS
+	// END GLOBAL DECLARATIONS
 
 	$(document).ready(function() {
+
 
 		// INPUT FUNCTIONS
 
@@ -177,10 +185,13 @@ $(document).foundation();
 				// chk_localStorage();
 				// chk_jquery();
 
+				// console.log(window.location.pathname.indexOf('/input/'));
+
 			// END Test
 
 			// if(window.location.href == "http://localhost:8000/input/") {
-			if(window.location.pathname == "/splitter/1.9/input/") {
+			// if(window.location.pathname == "/splitter/1.9/input/") {
+			if(window.location.pathname.indexOf('/input/') >= 0) {
 
 				// input functions
 
@@ -201,7 +212,8 @@ $(document).foundation();
 				});
 
 			// } else if (window.location.href == "http://localhost:8000/output/"){
-			} else if (window.location.pathname == "/splitter/1.9/output/"){
+			// } else if (window.location.pathname == "/splitter/1.9/output/"){
+			} else if (window.location.pathname.indexOf('/output/') >= 0) {
 
 				parse_variables();
 
@@ -236,3 +248,5 @@ $(document).foundation();
 	});
 
 // END Splitter v.1.9
+
+
